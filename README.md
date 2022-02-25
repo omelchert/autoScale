@@ -65,7 +65,7 @@ documentation provided within the code.
 
 ## Exemplary results for two-dimensional site percolation 
 
-![alt text](https://github.com/omelchert/py-ecpn/blob/main/results/fig_01/fig_FSS.png)
+![alt text](https://github.com/omelchert/autoScale/blob/main/fig_FSS.png)
 
 ### Brief explanation of the above figure
 
