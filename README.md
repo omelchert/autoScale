@@ -79,9 +79,9 @@ parameter optimization using `autoScale.py`.
 ## Further information
 
 For further information about program options and file-formats look up
-`autoScale.py` directly, or see the users guide under 
+`autoScale.py` directly, or see the [users guide](https://arxiv.org/abs/0910.5403) under 
 
-> O. Melchert, "autoScale.py - A program for automatic finite-size scaling analyses: A user's guide," arXiv (2009), see [here](https://arxiv.org/abs/0910.5403)
+> O. Melchert, "autoScale.py - A program for automatic finite-size scaling analyses: A user's guide," arXiv (2009).
 
 ## Availability of the software
 
