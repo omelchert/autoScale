@@ -1,0 +1,7 @@
+# configuration file: inputFiles.dat
+# 	<path to file> 		 	<system size>
+#./ORDER_PARAMETER/orderParam_L32.dat 		32
+#./ORDER_PARAMETER/orderParam_L64.dat 		64
+./ORDER_PARAMETER/orderParam_L128.dat 		128
+./ORDER_PARAMETER/orderParam_L256.dat 		256
+./ORDER_PARAMETER/orderParam_L512.dat 		512
