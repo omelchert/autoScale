@@ -29,6 +29,7 @@ autoScale/
 ├── README.md
 ├── ORDER_PARAMETER
 ├── autoScale.py
+├── autoScale_guide.pdf
 ├── main_fig_FSS.py
 ├── fig_FSS.png
 ├── inputFiles.dat
@@ -43,6 +44,8 @@ i.e.\ the relative size of the largest cluster, for the two-dimensional
 site-percolation problem on two-dimensional lattices.
 
 `autoScale.py` is the stanalone python script that performs the FSS analysis.
+
+`autoScale_guide.pdf` is a user guide.
 
 `inputFiles.dat` is a file serving as an easy interface between `autoScale.py`
 and the raw data.
@@ -79,7 +82,7 @@ parameter optimization using `autoScale.py`.
 ## Further information
 
 For further information about program options and file-formats look up
-`autoScale.py` directly, or see the [users guide](https://arxiv.org/abs/0910.5403) under 
+`autoScale.py` directly, or see the [users guide](https://arxiv.org/abs/0910.5403) enclosed as `autoScale_guide.pdf`, also available under 
 
 > O. Melchert, "autoScale.py - A program for automatic finite-size scaling analyses: A user's guide," arXiv (2009).
 
@@ -90,7 +93,7 @@ got a local
 [clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 of the repository, e.g. via
 
-``$ git clone https://github.com/omelchert/autoScale``
+``$ git clone https://github.com/omelchert/autoScale.git``
 
 ## License 
 
