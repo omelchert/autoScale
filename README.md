@@ -84,8 +84,10 @@ Performing a FSS analysis for the enclodes order parameter data for the
 two-dimensional site percolation problem within the region [-1.5:1.0] of the
 scaled control parameter is done in the following way:
 
-> $ python autoScale.py -f inputFiles.dat -xc 0.5927 -a 0.75 -b 0.104 -xr -1.5 1.
-> dx = [-1.500000:1.000000]  xc = 0.592708  a = 0.747566  b = 0.104459  S = 1.076691 
+```
+python autoScale.py -f inputFiles.dat -xc 0.5927 -a 0.75 -b 0.104 -xr -1.5 1.
+dx = [-1.500000:1.000000]  xc = 0.592708  a = 0.747566  b = 0.104459  S = 1.076691 
+```
 
 Upon termination, `autoScale.py` lists the parameter for which the best data collapse
 was achieved. In this case, the quality of the data collapse is approximately S=1.08.
@@ -95,15 +97,16 @@ error, similar to a chi-square-test.
 Error bars for each of the parameter can be obtained by invoking the additional flag
 `-getErrors`, resulting in 
 
-> $ python autoScale.py -f inputFiles.dat -xc 0.5927 -a 0.75 -b 0.104 -xr -1.5 1. -getError
-> [...]
-> # S+1 error analysis yields:
-> # Scaling analysis restricted to
->   xr = [-1.500000 : 1.000000]
-> # <scalePar>  <-Err>  <+Err>
->   xc = 0.592708 0.000075 0.000075
->    a = 0.747566 0.005424 0.005419
->    b = 0.104459 0.000971 0.000964
+```
+python autoScale.py -f inputFiles.dat -xc 0.5927 -a 0.75 -b 0.104 -xr -1.5 1. -getError
+# S+1 error analysis yields:
+# Scaling analysis restricted to
+  xr = [-1.500000 : 1.000000]
+# <scalePar>  <-Err>  <+Err>
+  xc = 0.592708 0.000075 0.000075
+   a = 0.747566 0.005424 0.005419
+   b = 0.104459 0.000971 0.000964
+```
 
 For a given parameter, say, parameter xc, the other parameters (a and b) are
 kept fixed, and the value of xc is first increased and then decreased until the
