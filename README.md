@@ -68,6 +68,8 @@ documentation provided within the code.
 
 ## Exemplary results for two-dimensional site percolation 
 
+![alt text](https://github.com/omelchert/autoScale/blob/main/fig_FSS.png)
+
 ### Finite-size scaling analysis using autoScale
 
 Performing a FSS analysis for the enclodes order parameter data for the
@@ -102,8 +104,6 @@ kept fixed, and the value of xc is first increased and then decreased until the
 quality S increases its value to S+1. The larger of the two xc-values is then
 quoted as the error on xc. This is referred to as a S+1 analysis.
 
-
-![alt text](https://github.com/omelchert/autoScale/blob/main/fig_FSS.png)
 
 ### Brief explanation of the above figure
 
