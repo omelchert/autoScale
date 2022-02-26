@@ -98,7 +98,6 @@ Error bars for each of the parameter can be obtained by invoking the additional 
 `-getErrors`, resulting in 
 
 ```
-python autoScale.py -f inputFiles.dat -xc 0.5927 -a 0.75 -b 0.104 -xr -1.5 1. -getError
 # S+1 error analysis yields:
 # Scaling analysis restricted to
   xr = [-1.500000 : 1.000000]
