@@ -68,17 +68,7 @@ documentation provided within the code.
 
 ## Exemplary results for two-dimensional site percolation 
 
-![alt text](https://github.com/omelchert/autoScale/blob/main/fig_FSS.png)
-
-### Brief explanation of the above figure
-
-Illustration of the data collapse technique for the order parameter of the site
-percolation problem in 2d. (a) unscaled data for different system sizes close
-to the critical point (each data point represents an average over 12800
-individual occupied/empty configurations). (b) data collapse after the scaling
-parameter optimization using `autoScale.py`.
-
-### Reporting the results obtained using autoScale
+### Finite-size scaling analysis using autoScale
 
 Performing a FSS analysis for the enclodes order parameter data for the
 two-dimensional site percolation problem within the region [-1.5:1.0] of the
@@ -112,6 +102,16 @@ kept fixed, and the value of xc is first increased and then decreased until the
 quality S increases its value to S+1. The larger of the two xc-values is then
 quoted as the error on xc. This is referred to as a S+1 analysis.
 
+
+![alt text](https://github.com/omelchert/autoScale/blob/main/fig_FSS.png)
+
+### Brief explanation of the above figure
+
+Illustration of the data collapse technique for the order parameter of the site
+percolation problem in 2d. (a) unscaled data for different system sizes close
+to the critical point (each data point represents an average over 12800
+individual occupied/empty configurations). (b) data collapse after the scaling
+parameter optimization using `autoScale.py`.
 
 ## Further information
 
