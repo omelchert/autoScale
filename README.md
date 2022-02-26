@@ -78,13 +78,46 @@ to the critical point (each data point represents an average over 12800
 individual occupied/empty configurations). (b) data collapse after the scaling
 parameter optimization using `autoScale.py`.
 
+### Reporting the results obtained using autoScale
+
+Performing a FSS analysis for the enclodes order parameter data for the
+two-dimensional site percolation problem within the region [-1.5:1.0] of the
+scaled control parameter is done in the following way:
+
+> $ python autoScale.py -f inputFiles.dat -xc 0.5927 -a 0.75 -b 0.104 -xr -1.5 1.
+> dx = [-1.500000:1.000000]  xc = 0.592708  a = 0.747566  b = 0.104459  S = 1.076691 
+
+Upon termination, `autoScale.py` lists the parameter for which the best data collapse
+was achieved. In this case, the quality of the data collapse is approximately S=1.08.
+The quality function S measures the mean-squared distance of the rescaled
+quantities at finite system size to their master curve in units of the standard
+error, similar to a chi-square-test.
+Error bars for each of the parameter can be obtained by invoking the additional flag
+`-getErrors`, resulting in 
+
+> $ python autoScale.py -f inputFiles.dat -xc 0.5927 -a 0.75 -b 0.104 -xr -1.5 1. -getError
+> [...]
+> # S+1 error analysis yields:
+> # Scaling analysis restricted to
+>   xr = [-1.500000 : 1.000000]
+> # <scalePar>  <-Err>  <+Err>
+>   xc = 0.592708 0.000075 0.000075
+>    a = 0.747566 0.005424 0.005419
+>    b = 0.104459 0.000971 0.000964
+
+For a given parameter, say, parameter xc, the other parameters (a and b) are
+kept fixed, and the value of xc is first increased and then decreased until the
+quality S increases its value to S+1. The larger of the two xc-values is then
+quoted as the error on xc. This is referred to as a S+1 analysis.
+
 
 ## Further information
 
 For further information about program options and file-formats look up
-`autoScale.py` directly, or see the [users guide](https://arxiv.org/abs/0910.5403) enclosed as `autoScale_guide.pdf`, also available under 
+`autoScale.py` directly, or see the users guide enclosed as
+`autoScale_guide.pdf`, also available under 
 
-> O. Melchert, "autoScale.py - A program for automatic finite-size scaling analyses: A user's guide," arXiv (2009).
+> O. Melchert, "autoScale.py - A program for automatic finite-size scaling analyses: A user's guide,"  [arXiv:0910.5403](https://arxiv.org/abs/0910.5403) (2009).
 
 ## Availability of the software
 
